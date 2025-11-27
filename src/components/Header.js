@@ -19,6 +19,15 @@ const Header = ({ userName }) => {
                             {t('header.welcome', { name: userName })}
                         </p>
                     )}
+                    <div className="authors-section">
+                        <p className="authors-label">Realizado por:</p>
+                        <div className="authors-list">
+                            <p>Brenda Gabriela Marin Ibarra</p>
+                            <p>Natalia Lizarazo</p>
+                            <p>Angela Riaño</p>
+                            <p>Laura Fernandez</p>
+                        </div>
+                    </div>
                 </div>
                 <img src={beeImage} alt="Abeja" className="bee-image header-bee-right" />
             </div>

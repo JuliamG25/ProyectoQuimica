@@ -46,6 +46,31 @@ header h2 {
     font-style: italic;
 }
 
+.authors-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.authors-label {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.authors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.authors-list p {
+    margin: 0;
+}
+
 .header-bee-left,
 .header-bee-right {
     width: 60px;
@@ -88,6 +113,19 @@ header h2 {
     .header-bee-left,
     .header-bee-right {
         width: 30px;
+    }
+    
+    .authors-section {
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+    
+    .authors-label {
+        font-size: 0.85rem;
+    }
+    
+    .authors-list {
+        font-size: 0.8rem;
     }
 }
 
