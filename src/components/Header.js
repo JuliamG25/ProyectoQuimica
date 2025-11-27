@@ -22,7 +22,7 @@ const Header = ({ userName }) => {
                     <div className="authors-section">
                         <p className="authors-label">Realizado por:</p>
                         <div className="authors-list">
-                            <p>Brenda Gabriela Marin Ibarra</p>
+                            <p>Brenda Marin</p>
                             <p>Natalia Lizarazo</p>
                             <p>Angela Riaño</p>
                             <p>Laura Fernandez</p>
