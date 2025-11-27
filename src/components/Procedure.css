@@ -1,0 +1,113 @@
+.procedure-section {
+    padding: 30px;
+    background: var(--bg-color);
+}
+
+.procedure-section h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.steps-container {
+    display: grid;
+    gap: 20px;
+}
+
+.step-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.step-card h4 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.step-content {
+    margin-left: 65px;
+}
+
+.step-content p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.step-content ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.step-content li {
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.chemical-info {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 100%);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border-left: 3px solid var(--success-color);
+    font-size: 0.95rem;
+}
+
+.chemical-info strong {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .step-content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .procedure-section {
+        padding: 15px;
+    }
+    
+    .step-card {
+        padding: 15px;
+    }
+}
+

@@ -1,6 +1,264 @@
 // Variable global para almacenar el nombre del usuario
 let userName = '';
 
+// Sistema de traducción
+const translations = {
+    es: {
+        // Modal
+        'modal.welcome': '¡Bienvenido!',
+        'modal.enterName': 'Por favor, ingresa tu nombre para continuar',
+        'modal.placeholder': 'Escribe tu nombre aquí...',
+        'modal.continue': 'Continuar',
+        // Header
+        'header.title': 'Procedimiento Químico',
+        'header.subtitle': 'Pastillas de Miel con Jengibre',
+        'header.process': 'Proceso de extracción y cristalización',
+        'header.welcome': '¡Hola, {name}! Bienvenido al procedimiento químico.',
+        // Sidebar
+        'sidebar.nav': 'Navegación',
+        'sidebar.info': '📋 Información General',
+        'sidebar.procedure': '⚗️ Procedimiento',
+        'sidebar.advantages': '✨ Ventajas',
+        'sidebar.disadvantages': '⚠️ Desventajas',
+        'sidebar.chemistry': '🔬 Información Química',
+        'sidebar.formulas': '📐 Fórmulas',
+        'sidebar.footer': 'Pastillas de Miel',
+        // Footer
+        'footer.text': 'Procedimiento Químico - Pastillas de Miel con Jengibre',
+        // Información General
+        'info.title': '📋 Información General',
+        'info.intro': 'Este procedimiento involucra la extracción de compuestos activos del jengibre y su combinación con miel para crear pastillas mediante procesos de cristalización controlada. El proceso combina principios de química orgánica, extracción de compuestos fenólicos y técnicas de formulación farmacéutica.',
+        'info.objective.title': 'Objetivo del Procedimiento',
+        'info.objective.text': 'Extraer y concentrar los compuestos bioactivos del jengibre (principalmente gingerol y shogaol) y combinarlos con miel para crear una formulación sólida que preserve las propiedades terapéuticas y permita una dosificación controlada.',
+        'info.ingredients.title': 'Ingredientes Principales',
+        'info.time.title': 'Tiempo de Preparación',
+        'info.conditions.title': 'Condiciones de Trabajo',
+        'info.principles.title': 'Principios Químicos Involucrados',
+        'info.materials.title': 'Materiales y Equipos Necesarios',
+        'info.quality.title': 'Parámetros de Calidad',
+        'info.storage.title': 'Conservación y Almacenamiento',
+        'info.considerations.title': 'Consideraciones Importantes',
+        // Procedimiento
+        'procedure.title': 'Procedimiento Paso a Paso',
+        // Ventajas
+        'advantages.title': '✨ Ventajas de Consumir Pastillas de Miel con Jengibre',
+        // Desventajas
+        'disadvantages.title': '⚠️ Desventajas y Precauciones',
+        // Información Química
+        'chemistry.title': '🔬 Información Química Detallada',
+        'chemistry.select': 'Selecciona un tema para ver más información química detallada.',
+        'chemistry.gingerol': 'Gingerol',
+        'chemistry.honey': 'Composición de la Miel',
+        'chemistry.crystallization': 'Proceso de Cristalización',
+        // Fórmulas
+        'formulas.title': '📐 Fórmulas Químicas Relevantes'
+    },
+    en: {
+        // Modal
+        'modal.welcome': 'Welcome!',
+        'modal.enterName': 'Please enter your name to continue',
+        'modal.placeholder': 'Type your name here...',
+        'modal.continue': 'Continue',
+        // Header
+        'header.title': 'Chemical Procedure',
+        'header.subtitle': 'Honey and Ginger Pills',
+        'header.process': 'Extraction and crystallization process',
+        'header.welcome': 'Hello, {name}! Welcome to the chemical procedure.',
+        // Sidebar
+        'sidebar.nav': 'Navigation',
+        'sidebar.info': '📋 General Information',
+        'sidebar.procedure': '⚗️ Procedure',
+        'sidebar.advantages': '✨ Advantages',
+        'sidebar.disadvantages': '⚠️ Disadvantages',
+        'sidebar.chemistry': '🔬 Chemical Information',
+        'sidebar.formulas': '📐 Formulas',
+        'sidebar.footer': 'Honey Pills',
+        // Footer
+        'footer.text': 'Chemical Procedure - Honey and Ginger Pills',
+        // Información General
+        'info.title': '📋 General Information',
+        'info.intro': 'This procedure involves the extraction of active compounds from ginger and their combination with honey to create pills through controlled crystallization processes. The process combines principles of organic chemistry, phenolic compound extraction, and pharmaceutical formulation techniques.',
+        'info.objective.title': 'Procedure Objective',
+        'info.objective.text': 'Extract and concentrate the bioactive compounds from ginger (mainly gingerol and shogaol) and combine them with honey to create a solid formulation that preserves therapeutic properties and allows controlled dosing.',
+        'info.ingredients.title': 'Main Ingredients',
+        'info.time.title': 'Preparation Time',
+        'info.conditions.title': 'Working Conditions',
+        'info.principles.title': 'Involved Chemical Principles',
+        'info.materials.title': 'Required Materials and Equipment',
+        'info.quality.title': 'Quality Parameters',
+        'info.storage.title': 'Conservation and Storage',
+        'info.considerations.title': 'Important Considerations',
+        // Procedimiento
+        'procedure.title': 'Step-by-Step Procedure',
+        // Ventajas
+        'advantages.title': '✨ Advantages of Consuming Honey and Ginger Pills',
+        // Desventajas
+        'disadvantages.title': '⚠️ Disadvantages and Precautions',
+        // Información Química
+        'chemistry.title': '🔬 Detailed Chemical Information',
+        'chemistry.select': 'Select a topic to see more detailed chemical information.',
+        'chemistry.gingerol': 'Gingerol',
+        'chemistry.honey': 'Honey Composition',
+        'chemistry.crystallization': 'Crystallization Process',
+        // Fórmulas
+        'formulas.title': '📐 Relevant Chemical Formulas'
+    },
+    de: {
+        // Modal
+        'modal.welcome': 'Willkommen!',
+        'modal.enterName': 'Bitte geben Sie Ihren Namen ein, um fortzufahren',
+        'modal.placeholder': 'Geben Sie hier Ihren Namen ein...',
+        'modal.continue': 'Weiter',
+        // Header
+        'header.title': 'Chemisches Verfahren',
+        'header.subtitle': 'Honig- und Ingwer-Pillen',
+        'header.process': 'Extraktions- und Kristallisationsprozess',
+        'header.welcome': 'Hallo, {name}! Willkommen zum chemischen Verfahren.',
+        // Sidebar
+        'sidebar.nav': 'Navigation',
+        'sidebar.info': '📋 Allgemeine Informationen',
+        'sidebar.procedure': '⚗️ Verfahren',
+        'sidebar.advantages': '✨ Vorteile',
+        'sidebar.disadvantages': '⚠️ Nachteile',
+        'sidebar.chemistry': '🔬 Chemische Informationen',
+        'sidebar.formulas': '📐 Formeln',
+        'sidebar.footer': 'Honig-Pillen',
+        // Footer
+        'footer.text': 'Chemisches Verfahren - Honig- und Ingwer-Pillen',
+        // Información General
+        'info.title': '📋 Allgemeine Informationen',
+        'info.intro': 'Dieses Verfahren umfasst die Extraktion aktiver Verbindungen aus Ingwer und deren Kombination mit Honig zur Herstellung von Pillen durch kontrollierte Kristallisationsprozesse. Der Prozess kombiniert Prinzipien der organischen Chemie, Extraktion von Phenolverbindungen und pharmazeutische Formulierungstechniken.',
+        'info.objective.title': 'Verfahrensziel',
+        'info.objective.text': 'Die bioaktiven Verbindungen aus Ingwer (hauptsächlich Gingerol und Shogaol) extrahieren und konzentrieren und sie mit Honig kombinieren, um eine feste Formulierung zu erstellen, die therapeutische Eigenschaften erhält und eine kontrollierte Dosierung ermöglicht.',
+        'info.ingredients.title': 'Hauptzutaten',
+        'info.time.title': 'Zubereitungszeit',
+        'info.conditions.title': 'Arbeitsbedingungen',
+        'info.principles.title': 'Beteiligte chemische Prinzipien',
+        'info.materials.title': 'Erforderliche Materialien und Ausrüstung',
+        'info.quality.title': 'Qualitätsparameter',
+        'info.storage.title': 'Konservierung und Lagerung',
+        'info.considerations.title': 'Wichtige Überlegungen',
+        // Procedimiento
+        'procedure.title': 'Schritt-für-Schritt-Verfahren',
+        // Ventajas
+        'advantages.title': '✨ Vorteile des Verzehrs von Honig- und Ingwer-Pillen',
+        // Desventajas
+        'disadvantages.title': '⚠️ Nachteile und Vorsichtsmaßnahmen',
+        // Información Química
+        'chemistry.title': '🔬 Detaillierte chemische Informationen',
+        'chemistry.select': 'Wählen Sie ein Thema, um detailliertere chemische Informationen zu sehen.',
+        'chemistry.gingerol': 'Gingerol',
+        'chemistry.honey': 'Honigzusammensetzung',
+        'chemistry.crystallization': 'Kristallisationsprozess',
+        // Fórmulas
+        'formulas.title': '📐 Relevante chemische Formeln'
+    }
+};
+
+// Función para cambiar el idioma
+function changeLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+    const currentTranslations = translations[lang];
+    
+    // Traducir elementos con data-translate
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        let text = currentTranslations[key];
+        
+        if (text && text.includes('{name}')) {
+            text = text.replace('{name}', userName);
+        }
+        
+        if (text) {
+            element.textContent = text;
+        }
+    });
+    
+    // Actualizar placeholder
+    document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (currentTranslations[key]) {
+            element.placeholder = currentTranslations[key];
+        }
+    });
+    
+    const userNameInput = document.getElementById('userName');
+    if (userNameInput) {
+        userNameInput.placeholder = currentTranslations['modal.placeholder'];
+    }
+    
+    // Actualizar código de idioma
+    const langCodes = { es: 'ES', en: 'EN', de: 'DE' };
+    const currentLangEl = document.getElementById('currentLang');
+    if (currentLangEl) {
+        currentLangEl.textContent = langCodes[lang];
+    }
+    
+    // Actualizar mensaje de bienvenida
+    const welcomeMessage = document.getElementById('welcomeMessage');
+    if (welcomeMessage && userName) {
+        welcomeMessage.textContent = currentTranslations['header.welcome'].replace('{name}', userName);
+    }
+    
+    // Actualizar enlaces de navegación
+    document.querySelectorAll('.nav-link').forEach((link, index) => {
+        const keys = [
+            'sidebar.info',
+            'sidebar.procedure',
+            'sidebar.advantages',
+            'sidebar.disadvantages',
+            'sidebar.chemistry',
+            'sidebar.formulas'
+        ];
+        if (keys[index]) {
+            link.textContent = currentTranslations[keys[index]];
+        }
+    });
+    
+    // Actualizar botones de detalles químicos
+    const detailButtons = document.querySelectorAll('.detail-btn');
+    if (detailButtons.length >= 3) {
+        detailButtons[0].textContent = currentTranslations['chemistry.gingerol'];
+        detailButtons[1].textContent = currentTranslations['chemistry.honey'];
+        detailButtons[2].textContent = currentTranslations['chemistry.crystallization'];
+    }
+}
+
+// Función para inicializar el selector de idioma
+function setupLanguageSelector() {
+    const languageBtn = document.getElementById('languageBtn');
+    const languageMenu = document.getElementById('languageMenu');
+    const languageOptions = document.querySelectorAll('.language-option');
+    
+    // Cargar idioma guardado o usar español por defecto
+    const savedLang = localStorage.getItem('preferredLanguage') || 'es';
+    changeLanguage(savedLang);
+    
+    // Toggle del menú
+    if (languageBtn) {
+        languageBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageMenu.classList.toggle('active');
+        });
+    }
+    
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.language-selector')) {
+            languageMenu.classList.remove('active');
+        }
+    });
+    
+    // Cambiar idioma al seleccionar opción
+    languageOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const lang = option.getAttribute('data-lang');
+            changeLanguage(lang);
+            languageMenu.classList.remove('active');
+        });
+    });
+}
+
 // Función para manejar el modal de nombre
 function setupNameModal() {
     const nameModal = document.getElementById('nameModal');
@@ -226,6 +484,7 @@ function init() {
     addFadeInAnimation();
     addFadeOutAnimation();
     setupNameModal();
+    setupLanguageSelector();
     setupDetailButtons();
     setupStepAnimation();
     setupStepCards();
@@ -371,4 +630,26 @@ function waitForContent() {
 }
 
 waitForContent();
+
+// Inicializar selector de idioma cuando el contenido esté visible
+function initLanguage() {
+    const mainContent = document.getElementById('mainContent');
+    if (mainContent && mainContent.style.display !== 'none') {
+        setupLanguageSelector();
+    } else {
+        const observer = new MutationObserver(() => {
+            if (mainContent.style.display !== 'none') {
+                setupLanguageSelector();
+                observer.disconnect();
+            }
+        });
+        observer.observe(mainContent, { attributes: true, attributeFilter: ['style'] });
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+} else {
+    initLanguage();
+}
 

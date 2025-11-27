@@ -1,0 +1,33 @@
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bee {
+    width: 40px;
+    height: auto;
+    opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-bee {
+        width: 25px;
+    }
+}
+

@@ -2,16 +2,42 @@
   "name": "pastillas-miel-jengibre",
   "version": "1.0.0",
   "description": "Página web interactiva sobre el procedimiento químico para hacer pastillas de miel con jengibre",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
-    "build": "echo 'No build step required for static site'"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "keywords": [
     "quimica",
     "jengibre",
     "miel",
-    "pastillas"
+    "pastillas",
+    "react"
   ],
   "author": "",
   "license": "MIT"
 }
-

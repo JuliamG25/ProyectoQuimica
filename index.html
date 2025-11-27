@@ -11,18 +11,19 @@
     <div class="name-modal" id="nameModal">
         <div class="modal-content">
             <img src="image.png" alt="Abeja" class="bee-image modal-bee">
-            <h2>👋 ¡Bienvenido!</h2>
-            <p>Por favor, ingresa tu nombre para continuar</p>
+            <h2 data-translate="modal.welcome">👋 ¡Bienvenido!</h2>
+            <p data-translate="modal.enterName">Por favor, ingresa tu nombre para continuar</p>
             <form id="nameForm">
                 <input 
                     type="text" 
                     id="userName" 
+                    data-translate-placeholder="modal.placeholder"
                     placeholder="Escribe tu nombre aquí..." 
                     required 
                     autofocus
                     maxlength="50"
                 >
-                <button type="submit" class="submit-btn">Continuar</button>
+                <button type="submit" class="submit-btn" data-translate="modal.continue">Continuar</button>
             </form>
         </div>
     </div>
@@ -32,22 +33,22 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <img src="image.png" alt="Abeja" class="bee-image sidebar-bee">
-                <h3>Navegación</h3>
+                <h3 data-translate="sidebar.nav">Navegación</h3>
                 <button class="sidebar-toggle" id="sidebarToggle" aria-label="Cerrar menú">✕</button>
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#informacion-general" class="nav-link">📋 Información General</a></li>
-                    <li><a href="#procedimiento" class="nav-link">⚗️ Procedimiento</a></li>
-                    <li><a href="#ventajas" class="nav-link">✨ Ventajas</a></li>
-                    <li><a href="#desventajas" class="nav-link">⚠️ Desventajas</a></li>
-                    <li><a href="#informacion-quimica" class="nav-link">🔬 Información Química</a></li>
-                    <li><a href="#formulas" class="nav-link">📐 Fórmulas</a></li>
+                    <li><a href="#informacion-general" class="nav-link" data-translate="sidebar.info">📋 Información General</a></li>
+                    <li><a href="#procedimiento" class="nav-link" data-translate="sidebar.procedure">⚗️ Procedimiento</a></li>
+                    <li><a href="#ventajas" class="nav-link" data-translate="sidebar.advantages">✨ Ventajas</a></li>
+                    <li><a href="#desventajas" class="nav-link" data-translate="sidebar.disadvantages">⚠️ Desventajas</a></li>
+                    <li><a href="#informacion-quimica" class="nav-link" data-translate="sidebar.chemistry">🔬 Información Química</a></li>
+                    <li><a href="#formulas" class="nav-link" data-translate="sidebar.formulas">📐 Fórmulas</a></li>
                 </ul>
             </nav>
             <div class="sidebar-footer">
                 <img src="image.png" alt="Abeja" class="bee-image sidebar-bee-small">
-                <p>Pastillas de Miel</p>
+                <p data-translate="sidebar.footer">Pastillas de Miel</p>
             </div>
         </aside>
 
@@ -62,9 +63,9 @@
             <div class="header-bees">
                 <img src="image.png" alt="Abeja" class="bee-image header-bee-left">
                 <div class="header-content">
-                    <h1>🧪 Procedimiento Químico</h1>
-                    <h2>Pastillas de Miel con Jengibre</h2>
-                    <p class="subtitle">Proceso de extracción y cristalización</p>
+                    <h1 data-translate="header.title">🧪 Procedimiento Químico</h1>
+                    <h2 data-translate="header.subtitle">Pastillas de Miel con Jengibre</h2>
+                    <p class="subtitle" data-translate="header.process">Proceso de extracción y cristalización</p>
                     <p class="welcome-message" id="welcomeMessage"></p>
                 </div>
                 <img src="image.png" alt="Abeja" class="bee-image header-bee-right">
@@ -75,7 +76,7 @@
             <div class="info-card">
                 <div class="info-card-header">
                     <img src="image.png" alt="Abeja" class="bee-image info-bee">
-                    <h3>📋 Información General</h3>
+                    <h3 data-translate="info.title">📋 Información General</h3>
                     <img src="image.png" alt="Abeja" class="bee-image info-bee">
                 </div>
                 <p class="intro-text">Este procedimiento involucra la extracción de compuestos activos del jengibre y su combinación con miel para crear pastillas mediante procesos de cristalización controlada. El proceso combina principios de química orgánica, extracción de compuestos fenólicos y técnicas de formulación farmacéutica.</p>
@@ -201,7 +202,7 @@
         </div>
 
         <div class="procedure-section content-section" id="procedimiento" data-section="procedimiento">
-            <h3>Procedimiento Paso a Paso</h3>
+            <h3 data-translate="procedure.title">Procedimiento Paso a Paso</h3>
             
             <div class="steps-container">
                 <div class="step-card" data-step="1">
@@ -337,7 +338,7 @@
         <div class="advantages-section content-section" id="ventajas" data-section="ventajas">
             <div class="section-title-with-bee">
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
-                <h3>✨ Ventajas de Consumir Pastillas de Miel con Jengibre</h3>
+                <h3 data-translate="advantages.title">✨ Ventajas de Consumir Pastillas de Miel con Jengibre</h3>
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
             </div>
             <div class="advantages-grid">
@@ -401,7 +402,7 @@
         <div class="disadvantages-section content-section" id="desventajas" data-section="desventajas">
             <div class="section-title-with-bee">
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
-                <h3>⚠️ Desventajas y Precauciones</h3>
+                <h3 data-translate="disadvantages.title">⚠️ Desventajas y Precauciones</h3>
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
             </div>
             <div class="disadvantages-grid">
@@ -465,23 +466,23 @@
         <div class="interactive-section content-section" id="informacion-quimica" data-section="informacion-quimica">
             <div class="section-title-with-bee">
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
-                <h3>🔬 Información Química Detallada</h3>
+                <h3 data-translate="chemistry.title">🔬 Información Química Detallada</h3>
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
             </div>
             <div class="chemical-details">
-                <button class="detail-btn" data-detail="gingerol">Gingerol</button>
-                <button class="detail-btn" data-detail="miel">Composición de la Miel</button>
-                <button class="detail-btn" data-detail="cristalizacion">Proceso de Cristalización</button>
+                <button class="detail-btn" data-detail="gingerol" data-translate="chemistry.gingerol">Gingerol</button>
+                <button class="detail-btn" data-detail="miel" data-translate="chemistry.honey">Composición de la Miel</button>
+                <button class="detail-btn" data-detail="cristalizacion" data-translate="chemistry.crystallization">Proceso de Cristalización</button>
             </div>
             <div class="detail-content" id="detailContent">
-                <p>Selecciona un tema para ver más información química detallada.</p>
+                <p data-translate="chemistry.select">Selecciona un tema para ver más información química detallada.</p>
             </div>
         </div>
 
         <div class="formula-section content-section" id="formulas" data-section="formulas">
             <div class="section-title-with-bee">
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
-                <h3>📐 Fórmulas Químicas Relevantes</h3>
+                <h3 data-translate="formulas.title">📐 Fórmulas Químicas Relevantes</h3>
                 <img src="image.png" alt="Abeja" class="bee-image section-bee">
             </div>
             <div class="formulas">
@@ -509,10 +510,32 @@
         <footer>
             <div class="footer-content">
                 <img src="image.png" alt="Abeja" class="bee-image footer-bee">
-                <p>Procedimiento Químico - Pastillas de Miel con Jengibre</p>
+                <p data-translate="footer.text">Procedimiento Químico - Pastillas de Miel con Jengibre</p>
                 <img src="image.png" alt="Abeja" class="bee-image footer-bee">
             </div>
         </footer>
+        </div>
+    </div>
+
+    <!-- Selector de idioma -->
+    <div class="language-selector" id="languageSelector">
+        <button class="language-btn" id="languageBtn" aria-label="Cambiar idioma">
+            <span class="language-icon">🌐</span>
+            <span class="language-code" id="currentLang">ES</span>
+        </button>
+        <div class="language-menu" id="languageMenu">
+            <button class="language-option" data-lang="es">
+                <span class="flag">🇪🇸</span>
+                <span>Español</span>
+            </button>
+            <button class="language-option" data-lang="en">
+                <span class="flag">🇬🇧</span>
+                <span>English</span>
+            </button>
+            <button class="language-option" data-lang="de">
+                <span class="flag">🇩🇪</span>
+                <span>Deutsch</span>
+            </button>
         </div>
     </div>
 

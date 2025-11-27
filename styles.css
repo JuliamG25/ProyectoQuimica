@@ -1529,3 +1529,149 @@ footer {
     }
 }
 
+/* Selector de idioma */
+.language-selector {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.language-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.language-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.language-icon {
+    font-size: 1.2rem;
+}
+
+.language-code {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.language-menu {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    min-width: 180px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.language-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    transition: all 0.2s ease;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.language-option:hover {
+    background: var(--bg-color);
+}
+
+.language-option:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+.language-option:last-child {
+    border-radius: 0 0 15px 15px;
+}
+
+.flag {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        bottom: 15px;
+        left: 15px;
+    }
+    
+    .language-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .language-menu {
+        min-width: 160px;
+        bottom: 55px;
+    }
+    
+    .language-option {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-selector {
+        bottom: 10px;
+        left: 10px;
+    }
+    
+    .language-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .language-icon {
+        font-size: 1rem;
+    }
+    
+    .language-code {
+        font-size: 0.75rem;
+    }
+    
+    .language-menu {
+        min-width: 150px;
+        bottom: 50px;
+    }
+    
+    .language-option {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .flag {
+        font-size: 1.1rem;
+    }
+}
+
