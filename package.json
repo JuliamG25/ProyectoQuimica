@@ -1,0 +1,17 @@
+{
+  "name": "pastillas-miel-jengibre",
+  "version": "1.0.0",
+  "description": "Página web interactiva sobre el procedimiento químico para hacer pastillas de miel con jengibre",
+  "scripts": {
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "quimica",
+    "jengibre",
+    "miel",
+    "pastillas"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
