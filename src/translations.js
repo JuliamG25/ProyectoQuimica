@@ -18,7 +18,7 @@ export const translations = {
         'sidebar.disadvantages': '⚠️ Desventajas',
         'sidebar.chemistry': '🔬 Información Química',
         'sidebar.formulas': '📐 Fórmulas',
-        'sidebar.footer': 'Pastillas de Miel',
+        'sidebar.footer': 'Pastillas de Jengibre',
         // Footer
         'footer.text': 'Procedimiento Químico - Pastillas de Miel con Jengibre',
         // Información General
@@ -239,7 +239,7 @@ export const translations = {
         'sidebar.disadvantages': '⚠️ Disadvantages',
         'sidebar.chemistry': '🔬 Chemical Information',
         'sidebar.formulas': '📐 Formulas',
-        'sidebar.footer': 'Honey Pills',
+        'sidebar.footer': 'Ginger Pills',
         'footer.text': 'Chemical Procedure - Honey and Ginger Pills',
         'info.title': '📋 General Information',
         'info.intro': 'This procedure involves the extraction of active compounds from ginger and their combination with honey to create pills through controlled crystallization processes. The process combines principles of organic chemistry, phenolic compound extraction, and pharmaceutical formulation techniques.',
@@ -450,7 +450,7 @@ export const translations = {
         'sidebar.disadvantages': '⚠️ Nachteile',
         'sidebar.chemistry': '🔬 Chemische Informationen',
         'sidebar.formulas': '📐 Formeln',
-        'sidebar.footer': 'Honig-Pillen',
+        'sidebar.footer': 'Ingwer-Pillen',
         'footer.text': 'Chemisches Verfahren - Honig- und Ingwer-Pillen',
         'info.title': '📋 Allgemeine Informationen',
         'info.intro': 'Dieses Verfahren umfasst die Extraktion aktiver Verbindungen aus Ingwer und deren Kombination mit Honig zur Herstellung von Pillen durch kontrollierte Kristallisationsprozesse. Der Prozess kombiniert Prinzipien der organischen Chemie, Extraktion von Phenolverbindungen und pharmazeutische Formulierungstechniken.',
