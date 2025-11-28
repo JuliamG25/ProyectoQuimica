@@ -14,6 +14,7 @@ export const translations = {
         'sidebar.nav': 'Navegación',
         'sidebar.info': '📋 Información General',
         'sidebar.procedure': '⚗️ Procedimiento',
+        'sidebar.history': '📚 Historia',
         'sidebar.advantages': '✨ Ventajas',
         'sidebar.disadvantages': '⚠️ Desventajas',
         'sidebar.chemistry': '🔬 Información Química',
@@ -31,6 +32,7 @@ export const translations = {
         'info.ingredients.honey': 'Miel pura:',
         'info.ingredients.water': 'Agua destilada:',
         'info.ingredients.yield': 'Rendimiento aproximado:',
+        'info.ingredients.yieldValue': '15-20 pastillas de 10-12g cada una',
         'info.time.title': 'Tiempo de Preparación',
         'info.time.initial': 'Preparación inicial:',
         'info.time.extraction': 'Extracción y maceración:',
@@ -68,7 +70,13 @@ export const translations = {
         'info.quality.ph': 'pH final:',
         'info.quality.waterActivity': 'Actividad de agua (aw):',
         'info.quality.texture': 'Textura:',
+        'info.quality.textureValue': 'Sólida pero flexible, no quebradiza',
         'info.quality.color': 'Color:',
+        'info.quality.colorValue': 'Ámbar claro a dorado',
+        'info.quality.moistureValue': '<15% (método gravimétrico)',
+        'info.quality.gingerolValue': '2-5% en extracto concentrado',
+        'info.quality.phValue': '4.5-5.5 (ácido, conserva mejor)',
+        'info.quality.waterActivityValue': '0.5-0.6 (previene crecimiento microbiano)',
         'info.storage.title': 'Conservación y Almacenamiento',
         'info.storage.temp': 'Temperatura:',
         'info.storage.humidity': 'Humedad:',
@@ -221,7 +229,18 @@ export const translations = {
         'formulas.fructose.name': 'Fructosa',
         'formulas.fructose.description': 'Azúcar principal en la miel, responsable de la dulzura y textura',
         'formulas.glucose.name': 'Glucosa',
-        'formulas.glucose.description': 'Monosacárido que contribuye a la estructura cristalina'
+        'formulas.glucose.description': 'Monosacárido que contribuye a la estructura cristalina',
+        // Historia
+        'history.title': '📚 Historia del Jengibre y la Miel',
+        'history.intro': 'El jengibre se descubrió en las selvas tropicales del sureste, lo que actualmente conocemos como Indonesia, y se expandió por China e India hace más de 4000 años. No es solo una planta que se descubrió, sino una base fundamental para el desarrollo de la medicina, ya que ayudó en la mejoría de muchas enfermedades o dolencias durante el transcurso de la humanidad.',
+        'history.ancient.title': 'Orígenes y Descubrimiento',
+        'history.ancient.text': 'El jengibre se descubrió en las selvas tropicales del sureste, lo que actualmente conocemos como Indonesia, y se expandió por China e India hace más de 4000 años. Desde sus orígenes, esta planta ha sido fundamental en el desarrollo de la medicina tradicional.',
+        'history.cultures.title': 'China: La Medicina del Calor',
+        'history.cultures.text': 'En la antigua China aparece en los libros antiguos de medicina tradicional como una de las mejores medicinas, ya que ayudaba a calentar y a mejorar el cuerpo, además ayudaba en el caso de intoxicación. Se consideraba esencial para mantener el equilibrio del organismo.',
+        'history.traditional.title': 'India: La Gran Medicina',
+        'history.traditional.text': 'En la India, el jengibre lo hacían llamar "la gran medicina", ya que era demasiado valioso en términos de curación de enfermedades tales como problemas de respiración, gripes, inflamación y dolores. Su efectividad en el tratamiento de diversas dolencias lo convirtió en un remedio fundamental.',
+        'history.modern.title': 'Roma Antigua: Moneda de Intercambio',
+        'history.modern.text': 'En el antiguo Roma, gracias al comercio con Arabia, el jengibre se volvió una moneda comercial para intercambiar bienes. Tanto así que el jengibre valía prácticamente lo mismo que una oveja en esos tiempos, ya que era demasiado valioso para las personas por lo que su efectividad combatiendo enfermedades era muy efectiva.'
     },
     en: {
         'modal.welcome': 'Welcome!',
@@ -235,6 +254,7 @@ export const translations = {
         'sidebar.nav': 'Navigation',
         'sidebar.info': '📋 General Information',
         'sidebar.procedure': '⚗️ Procedure',
+        'sidebar.history': '📚 History',
         'sidebar.advantages': '✨ Advantages',
         'sidebar.disadvantages': '⚠️ Disadvantages',
         'sidebar.chemistry': '🔬 Chemical Information',
@@ -432,7 +452,18 @@ export const translations = {
         'formulas.fructose.name': 'Fructose',
         'formulas.fructose.description': 'Main sugar in honey, responsible for sweetness and texture',
         'formulas.glucose.name': 'Glucose',
-        'formulas.glucose.description': 'Monosaccharide that contributes to crystalline structure'
+        'formulas.glucose.description': 'Monosaccharide that contributes to crystalline structure',
+        // History
+        'history.title': '📚 History of Ginger and Honey',
+        'history.intro': 'Ginger was discovered in the tropical forests of Southeast Asia, in what we now know as Indonesia, and spread to China and India over 4000 years ago. It is not just a plant that was discovered, but a fundamental basis for the development of medicine, as it helped improve many diseases or ailments throughout human history.',
+        'history.ancient.title': 'Origins and Discovery',
+        'history.ancient.text': 'Ginger was discovered in the tropical forests of Southeast Asia, in what we now know as Indonesia, and spread to China and India over 4000 years ago. Since its origins, this plant has been fundamental in the development of traditional medicine.',
+        'history.cultures.title': 'China: The Medicine of Heat',
+        'history.cultures.text': 'In ancient China, it appears in ancient traditional medicine books as one of the best medicines, as it helped warm and improve the body, and also helped in cases of poisoning. It was considered essential for maintaining the balance of the organism.',
+        'history.traditional.title': 'India: The Great Medicine',
+        'history.traditional.text': 'In India, ginger was called "the great medicine", as it was too valuable in terms of curing diseases such as respiratory problems, flu, inflammation, and pain. Its effectiveness in treating various ailments made it a fundamental remedy.',
+        'history.modern.title': 'Ancient Rome: Exchange Currency',
+        'history.modern.text': 'In ancient Rome, thanks to trade with Arabia, ginger became a commercial currency for exchanging goods. So much so that ginger was worth practically the same as a sheep in those times, as it was too valuable for people because its effectiveness in fighting diseases was very effective.'
     },
     de: {
         'modal.welcome': 'Willkommen!',
@@ -446,6 +477,7 @@ export const translations = {
         'sidebar.nav': 'Navigation',
         'sidebar.info': '📋 Allgemeine Informationen',
         'sidebar.procedure': '⚗️ Verfahren',
+        'sidebar.history': '📚 Geschichte',
         'sidebar.advantages': '✨ Vorteile',
         'sidebar.disadvantages': '⚠️ Nachteile',
         'sidebar.chemistry': '🔬 Chemische Informationen',
@@ -643,6 +675,17 @@ export const translations = {
         'formulas.fructose.name': 'Fructose',
         'formulas.fructose.description': 'Hauptzucker im Honig, verantwortlich für Süße und Textur',
         'formulas.glucose.name': 'Glucose',
-        'formulas.glucose.description': 'Monosaccharid, das zur kristallinen Struktur beiträgt'
+        'formulas.glucose.description': 'Monosaccharid, das zur kristallinen Struktur beiträgt',
+        // Geschichte
+        'history.title': '📚 Geschichte von Ingwer und Honig',
+        'history.intro': 'Ingwer wurde in den tropischen Wäldern Südostasiens entdeckt, in dem, was wir heute als Indonesien kennen, und verbreitete sich vor über 4000 Jahren nach China und Indien. Es ist nicht nur eine Pflanze, die entdeckt wurde, sondern eine fundamentale Grundlage für die Entwicklung der Medizin, da sie zur Verbesserung vieler Krankheiten oder Beschwerden im Laufe der Menschheitsgeschichte beigetragen hat.',
+        'history.ancient.title': 'Ursprünge und Entdeckung',
+        'history.ancient.text': 'Ingwer wurde in den tropischen Wäldern Südostasiens entdeckt, in dem, was wir heute als Indonesien kennen, und verbreitete sich vor über 4000 Jahren nach China und Indien. Seit seinen Ursprüngen war diese Pflanze fundamental für die Entwicklung der traditionellen Medizin.',
+        'history.cultures.title': 'China: Die Medizin der Wärme',
+        'history.cultures.text': 'Im alten China erscheint es in alten Büchern der traditionellen Medizin als eine der besten Medikamente, da es half, den Körper zu erwärmen und zu verbessern, und auch bei Vergiftungen half. Es galt als wesentlich für die Aufrechterhaltung des Gleichgewichts des Organismus.',
+        'history.traditional.title': 'Indien: Die Große Medizin',
+        'history.traditional.text': 'In Indien nannte man Ingwer "die große Medizin", da er zu wertvoll war in Bezug auf die Heilung von Krankheiten wie Atemproblemen, Grippe, Entzündungen und Schmerzen. Seine Wirksamkeit bei der Behandlung verschiedener Beschwerden machte ihn zu einem fundamentalen Heilmittel.',
+        'history.modern.title': 'Antikes Rom: Tauschwährung',
+        'history.modern.text': 'Im antiken Rom wurde Ingwer dank des Handels mit Arabien zu einer Handelswährung für den Warenaustausch. So sehr, dass Ingwer in jenen Zeiten praktisch so viel wert war wie ein Schaf, da er für die Menschen zu wertvoll war, weil seine Wirksamkeit bei der Bekämpfung von Krankheiten sehr effektiv war.'
     }
 };

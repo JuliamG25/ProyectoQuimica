@@ -46,11 +46,6 @@ const Advantages = () => {
             icon: '❤️',
             titleKey: 'advantages.cardiovascular.title',
             textKey: 'advantages.cardiovascular.text'
-        },
-        {
-            icon: '⚡',
-            titleKey: 'advantages.absorption.title',
-            textKey: 'advantages.absorption.text'
         }
     ];
 

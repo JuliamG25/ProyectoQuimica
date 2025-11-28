@@ -38,11 +38,6 @@ const Disadvantages = () => {
             textKey: 'disadvantages.botulism.text'
         },
         {
-            icon: '⚖️',
-            titleKey: 'disadvantages.dosing.title',
-            textKey: 'disadvantages.dosing.text'
-        },
-        {
             icon: '🌡️',
             titleKey: 'disadvantages.temperature.title',
             textKey: 'disadvantages.temperature.text'

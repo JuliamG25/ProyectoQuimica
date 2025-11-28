@@ -4,6 +4,7 @@ import NameModal from './components/NameModal';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import InfoGeneral from './components/InfoGeneral';
+import History from './components/History';
 import Procedure from './components/Procedure';
 import Advantages from './components/Advantages';
 import Disadvantages from './components/Disadvantages';
@@ -66,6 +67,9 @@ function App() {
                             <div className="content-wrapper">
                                 {activeSection === 'informacion-general' && (
                                     <InfoGeneral key="info-general" />
+                                )}
+                                {activeSection === 'historia' && (
+                                    <History key="history" />
                                 )}
                                 {activeSection === 'procedimiento' && (
                                     <Procedure key="procedure" />

@@ -23,6 +23,7 @@ const Sidebar = ({ activeSection, onSectionChange }) => {
 
     const sections = [
         { id: 'informacion-general', key: 'sidebar.info' },
+        { id: 'historia', key: 'sidebar.history' },
         { id: 'procedimiento', key: 'sidebar.procedure' },
         { id: 'ventajas', key: 'sidebar.advantages' },
         { id: 'desventajas', key: 'sidebar.disadvantages' },
